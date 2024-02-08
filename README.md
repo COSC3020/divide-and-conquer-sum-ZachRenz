@@ -30,7 +30,7 @@ most important part. Add your answer to this markdown file.
 ## Runtime Analysis Solution
 
 After finishing my code, I can make these conjectures about the how my function will grow over time. <br>
-The function calls three of itself inside the function, each function processing a third of the data, and after all is said and done it adds up the three branches consistently (which is a constant amount of work). It only finishes recursion when the size of the list is either 1 or 0. So we can write our function like this: <br> 
+The function calls three of itself inside the function, each function processing a third of the data, and after all is said and done it adds up the three branches consistently (which is a constant amount of work). It only finishes recursion when the size of the list is either 1 or 0. So we can write our recurrence relation like this: <br> 
 $T(n) = 3T(n/3) + C$, Where $T(1) = 1$ and $T(0) = 1$<br> 
 And to produce the next term in this relation, we need to find $T(n/3)$, how the function divides up n recursively <br>
 $T(n/3) = 3T(n/3/3) + C => 3T(n/9) + C$ <br>
