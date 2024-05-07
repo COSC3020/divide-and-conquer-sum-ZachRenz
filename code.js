@@ -20,9 +20,8 @@ function slicef(x = []) {
     let midSlice = x.slice(mid1, mid2);
     let highSlice = x.slice(mid2, x.length);
 
-    return slicef(lowSlice) + slicef(midSlice) + slicef(highSlice);
+    return slicef(lowSlice) + slicef(midSlice) + slicef(highSlice); // Ali torabi helped me with this last line of code, and it fixed the code. 
 }
-
 
 
 // slice
